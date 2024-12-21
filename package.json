@@ -1,0 +1,50 @@
+{
+  "name": "@lijspoop/event-handler",
+  "version": "1.0.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.iife.prod.js",
+  "jsdelivr": "dist/index.iife.prod.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "production": "./dist/index.esm.prod.js",
+        "node": "./dist/index.esm.js",
+        "default": "./dist/index.esm.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "node": {
+          "production": "./dist/index.cjs.prod.js",
+          "development": "./dist/index.cjs.js",
+          "default": "./dist/index.cjs.js"
+        },
+        "default": "./dist/index.cjs.js"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lijspoop/event-handler.git"
+  },
+  "author": "lijspoop <lijs.poop@gmail.com>",
+  "license": "BSD-2-Clause",
+  "private": false,
+  "scripts": {
+    "build": "tsup"
+  },
+  "bugs": {
+    "url": "https://github.com/lijspoop/event-handler/issues"
+  },
+  "homepage": "https://github.com/lijspoop/event-handler#readme",
+  "description": "",
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}
